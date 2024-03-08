@@ -96,7 +96,7 @@ body {
     background-color: #696969;
 }
    
-    /* 3 columns style */
+    /* 3 columns Hamburger, pizza, and cake style */
 
 .container {
     display: flex;
@@ -159,7 +159,8 @@ body {
     border-radius: 20px;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
 }
-    /* big hamburger image animation */
+    /* big hamburger image animation(shake on hover state) */
+
 .item-box2 {
     display: relative;
     text-align: center;
@@ -214,40 +215,45 @@ body {
 }
 
 footer .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: white;
-    height: 5rem;
-    width: 100%;
-    margin-left: -1rem;
-    padding-right: 2rem;
-}
-  
-.grid-item {
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem;
 }
-  
+
+.grid-item {
+    width: 100%; 
+}
+
 .icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2rem;
+    width: 3rem;
     height: 3rem;
     text-align: center;
     background-color: #eee;
     border-radius: 50%;
-    margin-bottom: 5px;
+    margin: 10px auto; 
 }
-  
+
 .grid-item p {
     font-size: 14px;
+    text-align: center;
     margin: 0;
 }
 
-    /* end of homepage */
+.link-item {
+    text-decoration: none;
+    color: black; 
+    display: block;
+    text-align: center;
+    margin: 10px 0; 
+}
+
+
+    /* end of index(home) page */
 
     /* start of product page */
 
@@ -330,7 +336,7 @@ footer .grid-container {
     height: 2.5rem;
     color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    background-color: rgb(206, 22, 22);
+    background-color: rgb(210, 131, 131);
 }
 
 .productpage {
@@ -352,6 +358,12 @@ footer .grid-container {
     margin: 0.5rem 0 0.5rem 0.5rem;
     position: relative;
     left: 1rem;
+}
+
+.cart1 a {
+    text-decoration: none;
+    color: white;
+    padding: 0 2rem 0 1rem;
 }
 
     /* end of product page*/
@@ -525,3 +537,5 @@ footer .grid-container {
     display: flex;
     justify-content: space-between;
 }
+
+
