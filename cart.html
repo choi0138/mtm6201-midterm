@@ -10,13 +10,13 @@
 <body>
     <div class="cart-nav">
         <a href="product.html"><i class="fa-solid fa-chevron-left"></i></a>
-        <p>Cart</p>
+        <h2>Cart</h2>
         <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
     </div>
     <div class="cart-item1">
         <img src="images/big-burger.png">
         <div class="cart-item1-info1">
-            <p>Chipotle Che..</p>
+            <h4>Chipotle Che..</h4>
             <div class="cart-item1-numb">
                 <button><i class="fa-solid fa-minus"></i></button>
                 <p>2</p>
@@ -32,7 +32,7 @@
     <div class="cart-item2">
         <img src="images/bulgogiburger.webp">
         <div class="cart-item2-info1">
-            <p>Bulgogi Burger</p>
+            <h4>Bulgogi Burger</h4>
             <div class="cart-item2-numb">
                 <button><i class="fa-solid fa-minus"></i></button>
                 <p>1</p>
@@ -44,7 +44,20 @@
             <p>$20.95</p>
         </div>
     </div>
-    <button class="coupon">Apply Coupons →</button>
+
+    <!-- Coupon and coupon input button -->
+    <div class="coupon-section">
+        <input type="checkbox" id="toggle-coupon" class="toggle-coupon">
+        <label for="toggle-coupon" class="coupon-btn">Apply Coupons →</label>
+        <div class="enter-coupon-code">
+            <div class="coupon-input-group">
+                <input type="text" placeholder="Enter your coupon code">
+                <label for="toggle-coupon" class="apply-coupon-btn">Apply</label>
+            </div>
+        </div>
+    </div>
+    <!-- Coupon and coupon input button end -->
+
     <section class="checkout">
         <div class="payment-cal">
             <p>Item Total</p>
@@ -59,7 +72,7 @@
     </section>    
 
     <div class="totalamount">
-        <p>Total:</p>
+        <h4>Total:</h4>
         <p>$65.35</p>
     </div>    
 
