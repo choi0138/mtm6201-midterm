@@ -658,15 +658,22 @@ Text rises and fades in and out */
         font-size: 1.5rem;     
     }
 
+    .intro, .search-bar {
+        margin-left: 5%;
+    }
+
     .content-container {
         max-width: 1200px;
-        margin: 0 auto; /* Center the container */
+        margin: 0 auto; 
     }
     
     .container {
         display: flex;
         justify-content: space-between;
+        margin: auto;
+        margin-top: 5%;
         align-items: stretch; 
+        width: 90%;
     }
 
     .column {
