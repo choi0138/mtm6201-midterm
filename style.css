@@ -702,11 +702,11 @@ Text rises and fades in and out */
         align-items: center;
     }
 
-    .size-btn p, .size-btnm p, .plusminus p {
+    .size-btn, .size-btnm, .plusminus{
         font-size: 1.5rem;
         margin: 0; 
     }
-    
+
     .size-btnm {
         position: relative;
         top: 3rem;
