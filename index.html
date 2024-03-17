@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Pop-up nav menu code -->
   <div class="content-container">
     <header>
         <div class="container-header">
@@ -24,9 +25,16 @@
                 <li><a href="product.html">Product</a></li>
                 <li><a href="cart.html">Cart</a></li>
             </ul>
+  <!-- Pop-up nav menu code end-->
             </nav>
             <span><h1>K-Burger</h1></span>
-            <span class="logo"><img src="images/logo.png" alt="logo image"></span>
+            <span class="logo">
+              <picture>
+                <source media="(min-width: 769px)" srcset="images/Flag_of_South_Korea-80.png">
+                <source media="(max-width: 768px)" srcset="images/Flag_of_South_Korea-40.png">
+                <img src="images/Flag_of_South_Korea.png" alt="logo-korean-flag-image">
+              </picture>
+            </span>
         </div>    
     </header>
     <section class="intro">
@@ -40,25 +48,40 @@
               <i class="fa fa-search"></i>
             </button>
         </div>
-          
+  <!-- product three column code -->
         <div class="container">
             <div class="column">
-              <img src="images/burger.jpeg" alt="hamberger image">
+              <picture>
+                <source media="(min-width: 769px)" srcset="images/burger-250_x_235.png">
+                <source media="(max-width: 768px)" srcset="images/burger-75_x_75.jpeg">
+                <img src="images/burger.jpeg" alt="product-burger-image">
+              </picture>
               <h5>Burgers</h5>
               <i class="fa-solid fa-angle-right"></i>
             </div>
             <div class="column">
-              <img src="images/pizza.avif" alt="pizza image">
+              <picture>
+                <source media="(min-width: 769px)" srcset="images/pizza-234_x_220.png">
+                <source media="(max-width: 768px)" srcset="images/pizza-75_x_75.png">
+                <img src="images/pizza.avif" alt="product-pizza-image">
+              </picture>
               <h5>Pizza</h5>
               <i class="fa-solid fa-angle-right"></i>
             </div>
             <div class="column">
-              <img src="images/cake.webp" alt="cake image">
+              <picture>
+                <source media="(min-width: 769px)" srcset="images/cake-234_x_220.webp">
+                <source media="(max-width: 768px)" srcset="images/cake-75_x_75.png">
+                <img src="images/cake.webp" alt="product-cake-image">
+              </picture>
               <h5>Cakes</h5>
               <i class="fa-solid fa-angle-right"></i>
             </div>
           </div>
     </section>
+
+      <!-- product three column code end -->
+
     <section class="item-ad">
         <h4>Popular</h4>
         <h6>View All ></h6>
@@ -67,7 +90,11 @@
     <section class="item">
         <div class="item-box">
             <div class="item-box2">
-                <img src="images/big-burger.png">
+              <picture>
+                <source media="(min-width: 769px)" srcset="images/big-burger-360_x_360.png">
+                <source media="(max-width: 768px)" srcset="images/big-burger-180_x_180.png">
+                <img src="images/big-burger.png" alt="popular-burger-image">
+              </picture>
             </div>
             <div class="item-descrip">
                 <p>Korean Bulgogi Burger</p>
@@ -89,25 +116,25 @@
         <div class="grid-item">
           <a href="product.html" class="link-item">
             <div class="icon-container">
-              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-burger"></i>
             </div>
-            <p>Favorites</p>
+            <p>Product</p>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="cart.html" class="link-item">
+            <div class="icon-container">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <p>Cart</p>
           </a>
         </div>
         <div class="grid-item">
           <a href="#" class="link-item">
             <div class="icon-container">
-              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-arrow-up"></i>
             </div>
-            <p>Account</p>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a href="#" class="link-item">
-            <div class="icon-container">
-              <i class="fa-solid fa-ellipsis"></i>
-            </div>
-            <p>More</p>
+            <p>Top</p>
           </a>
         </div>
       </div>
