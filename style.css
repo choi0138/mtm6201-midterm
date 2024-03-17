@@ -308,7 +308,7 @@ Text rises and fades in and out */
   
   .buogogiburgerdescrip h2,
   .buogogiburgerdescrip p {
-      animation: fadeColorAndRise 2s ease-in-out forwards; /* Increased to 2s for a more delicate effect */
+      animation: fadeColorAndRise 2s ease-in-out forwards infinite; /* Increased to 2s for a more delicate effect */
   }
   
   .buogogiburgerdescrip h2 {
