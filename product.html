@@ -20,12 +20,16 @@
         <h2>Korean Bulgogi Burger</h2>
         <p>A signature Korean Bulgogi patty</p>
         <p>topped with Bulgogi seasoning</p>
-        <img src="images/bulgogiburger.webp">
+        <picture>
+            <source media="(min-width: 769px)" srcset="images/bulgogiburger-600_x_444.png">
+            <source media="(max-width: 768px)" srcset="images/bulgogiburger-350_x_259.png">
+            <img src="images/bulgogiburger.webp" alt="product-bulgogi-burger-image">
+          </picture>
     </div>
     <div class="size-btn-container">
-        <button class="size-btn">S</button>
-        <button class="size-btnm">M</button>
-        <button class="size-btn">L</button>
+        <button class="size-btn"><p>S</p></button>
+        <button class="size-btnm"><p>M</p></button>
+        <button class="size-btn"><p>L</p></button>
     </div>
     <img class="shadow" src="images/shadow.svg" alt="sagging in the middle shadow">
     <div class="item-number">
