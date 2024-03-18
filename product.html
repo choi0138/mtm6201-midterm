@@ -11,12 +11,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+
     <div class="content-container">
+    <header>
     <div class="item-nav">
-        <a href="index.html"><i class="fa-solid fa-chevron-left"></i></a>
-        <a href="#"><i class="fa-regular fa-heart"></i></a>
     </div>
-    <div class="buogogiburgerdescrip">
+    </header>
+    <main id="maincontent">
+        <div class="item-nav" role="navigation">
+            <a href="index.html" aria-label="Back to Home"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="#" aria-label="Add to Favorites"><i class="fa-regular fa-heart"></i></a>
+        </div>
+    </main>
+    <article class="buogogiburgerdescrip">
         <h2>Korean Bulgogi Burger</h2>
         <p>A signature Korean Bulgogi patty</p>
         <p>topped with Bulgogi seasoning</p>
@@ -25,20 +33,20 @@
             <source media="(max-width: 768px)" srcset="images/bulgogiburger-350_x_259.png">
             <img src="images/bulgogiburger.webp" alt="product-bulgogi-burger-image">
           </picture>
+    </article>
+    <div class="size-btn-container" role="group" aria-label="Select burger size">
+        <button class="size-btn" aria-label="Size small">S</button>
+        <button class="size-btnm" aria-label="Size medium">M</button>
+        <button class="size-btn" aria-label="Size large">L</button>
     </div>
-    <div class="size-btn-container">
-        <button class="size-btn">S</button>
-        <button class="size-btnm">M</button>
-        <button class="size-btn">L</button>
-    </div>
-    <img class="shadow" src="images/shadow.svg" alt="sagging in the middle shadow">
+    <img class="shadow" src="images/shadow.svg" alt="Decorative shadow">
     <div class="item-number">
-        <button class="plusminus"><i class="fa-solid fa-minus"></i></button>
+        <button class="plusminus" aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
         <p>2</p>
-        <button class="plusminus"><i class="fa-solid fa-plus"></i></button>
+        <button class="plusminus" aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
     </div>
     
-    <footer class="productpage">
+    <footer class="productpage" role="contentinfo">
         <div>
             <p>Price</p>
             <h4>$ 41.90</h4>
@@ -48,7 +56,7 @@
             <a href="cart.html">Go to Cart</a>
         </div>
     </footer>
-</div>
+    </div>>
 </body>
 
 </html>
